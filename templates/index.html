@@ -1,0 +1,252 @@
+{% extends "base.html" %} {% block content %} <!-- CARRUSEL -->
+<section class="carousel-section py-5">
+    <div id="serviciosCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner"> <!-- SERVICIO -->
+            <div class="carousel-item active"> <a href="{{ url_for('static', filename='pdf/marketing.pdf') }}"
+                    target="_blank"> <img src="{{ url_for('static', filename='img/marketing.jpg') }}"
+                        class="d-block w-100" alt="Marketing">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Marketing Digital</h5>
+                        <p>Estrategias digitales para aumentar tu presencia.</p>
+                    </div>
+                </a> </div> <!-- Diseño gráfico -->
+            <div class="carousel-item"> <a href="{{ url_for('static', filename='pdf/diseno.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/diseno.jpg') }}" class="d-block w-100">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Diseño Gráfico</h5>
+                        <p>Identidad visual profesional.</p>
+                    </div>
+                </a> </div> <!-- Desarrollo web -->
+            <div class="carousel-item"> <a href="{{ url_for('static', filename='pdf/desarrollo.pdf') }}"
+                    target="_blank"> <img src="{{ url_for('static', filename='img/web.jpg') }}" class="d-block w-100">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Desarrollo web</h5>
+                        <p>Sitios web a la medida.</p>
+                    </div>
+                </a> </div> <!-- Video -->
+            <div class="carousel-item"> <a href="{{ url_for('static', filename='pdf/diseno.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/video.jpg') }}" class="d-block w-100">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Creación y edición de video</h5>
+                        <p>Orientacion para proyectos multimedia.</p>
+                    </div>
+                </a> </div> <!-- mantenimiento pc -->
+            <div class="carousel-item"> <a href="{{ url_for('static', filename='pdf/diseno.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/mantenimiento.jpg') }}" class="d-block w-100">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Ensamble y mantenimiento de computadores</h5>
+                        <p>Rendimiento, estabilidad y continuidad operativa.</p>
+                    </div>
+                </a> </div> <!-- bd -->
+            <div class="carousel-item"> <a href="{{ url_for('static', filename='pdf/diseno.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/bases.jpg') }}" class="d-block w-100">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Bases de Datos</h5>
+                        <p>Diseño, administración y optimización.</p>
+                    </div>
+                </a> </div> <!-- Ciberseguridad -->
+            <div class="carousel-item"> <a href="{{ url_for('static', filename='pdf/diseno.pdf') }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/seguridad.jpg') }}" class="d-block w-100">
+                    <div class="carousel-caption bg-dark bg-opacity-75 rounded">
+                        <h5>Ciberseguridad</h5>
+                        <p>Protege lo que te importa.</p>
+                    </div>
+                </a> </div>
+        </div> <button class="carousel-control-prev" type="button" data-bs-target="#serviciosCarousel"
+            data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button> <button
+            class="carousel-control-next" type="button" data-bs-target="#serviciosCarousel" data-bs-slide="next"> <span
+                class="carousel-control-next-icon"></span> </button>
+    </div>
+
+</section> <!-- BOTON CTA -->
+<section class="cta-section text-center py-5">
+    <div class="container">
+        <h3 class="mb-3">¿Listo para impulsar tu proyecto?</h3>
+        <p class="mb-4"> Conversemos y encontremos la mejor solución tecnológica para tu negocio. </p>
+        <a href="https://wa.me/573176625173?text=Hola%2C%20visité%20su%20sitio%20web%20y%20me%20gustaría%20recibir%20asesoría%20sobre%20sus%20servicios."
+            class="btn btn-cta" target="_blank">
+            <i class="bi bi-whatsapp me-2"></i>
+            Solicitar asesoría
+        </a>
+    </div>
+
+</section> <!-- INFORMACIÓN EMPRESARIAL -->
+<section id="empresa" class="empresa-section py-5">
+    <div class="container">
+        <h2 class="text-center text-white mb-5">Nuestra Empresa</h2>
+        <div class="row justify-content-center"> <!-- Misión -->
+            <div class="col-md-4 mb-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front"> <i class="bi bi-bullseye"></i>
+                            <h4>Misión</h4>
+                        </div>
+                        <div class="flip-card-back">
+                            <p> Brindar soluciones tecnológicas, creativas y seguras que impulsen el crecimiento digital
+                                de nuestros clientes. </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Visión -->
+            <div class="col-md-4 mb-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front"> <i class="bi bi-eye"></i>
+                            <h4>Visión</h4>
+                        </div>
+                        <div class="flip-card-back">
+                            <p> Ser una empresa líder en innovación tecnológica, reconocida por la calidad y confianza
+                                de nuestras soluciones. </p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Filosofía -->
+            <div class="col-md-4 mb-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front"> <i class="bi bi-lightbulb"></i>
+                            <h4>Filosofía</h4>
+                        </div>
+                        <div class="flip-card-back">
+                            <p> Creemos en la tecnología como motor de cambio, trabajando con ética, creatividad y
+                                compromiso. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="py-5" style="background-color:#f2f4f7;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <h2 class="text-center mb-2">Hablemos de tu proyecto</h2>
+                <p class="text-center mb-4 text-muted">
+                    Cuéntanos qué necesitas y te contactaremos por WhatsApp.
+                </p>
+
+                <form id="formWhatsApp">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre *</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo electrónico *</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono (opcional)</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Servicio de interés</label>
+                        <select class="form-select" id="servicio">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="Marketing Digital">Marketing Digital</option>
+                            <option value="Diseño Gráfico">Diseño Gráfico</option>
+                            <option value="Desarrollo web">Desarrollo web</option>
+                            <option value="Creación y edición de video">Creación y edición de video</option>
+                            <option value="Ensamble y mantenimiento de computadores">Ensamble y mantenimiento de computadores</option>
+                            <option value="Bases de datos">Bases de datos</option>
+                            <option value="Ciberseguridad">Ciberseguridad</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje *</label>
+                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" required>
+                        <label class="form-check-label">
+                            Acepto el tratamiento de mis datos
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                        class="btn btn-lg w-100 text-white"
+                        style="background-color:#6f42c1;">
+                        Solicitar asesoría por WhatsApp
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCIA -->
+<section id="experiencia" class="experience-section py-5">
+    <div class="container">
+
+        <!-- Título -->
+        <div class="text-center mb-5">
+            <h2 class="experience-title">Nuestra Experiencia</h2>
+            <p class="experience-subtitle">
+                Años de trabajo aplicando tecnología para resolver problemas reales.
+            </p>
+        </div>
+
+        <!-- Métricas -->
+        <div class="row text-center mb-5">
+
+            <div class="col-md-3 mb-4">
+                <div class="experience-card">
+                    <h3>+5</h3>
+                    <p>Años de experiencia</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="experience-card">
+                    <h3>+120</h3>
+                    <p>Proyectos realizados</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="experience-card">
+                    <h3>+30</h3>
+                    <p>Clientes atendidos</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="experience-card">
+                    <h3>100%</h3>
+                    <p>Soluciones personalizadas</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Logos -->
+        <div class="text-center mb-4">
+            <p class="text-muted mb-3">Empresas que han confiado en nosotros</p>
+
+            <div class="experience-logos">
+                <img src="{{ url_for('static', filename='img/logos/logo1.png') }}" alt="Cliente 1">
+                <img src="{{ url_for('static', filename='img/logos/logo2.png') }}" alt="Cliente 2">
+                <img src="{{ url_for('static', filename='img/logos/logo3.jpg') }}" alt="Cliente 3">
+                <img src="{{ url_for('static', filename='img/logos/logo4.jpg') }}" alt="Cliente 4">
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+
+{% endblock %}

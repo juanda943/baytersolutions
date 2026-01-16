@@ -1,0 +1,294 @@
+:root {
+    --color-primary: #0D6EFD;
+    --color-secondary: #20C997;
+    --color-bg-light: #F8F9FA;
+    --color-bg-dark: #212529;
+    --color-text-main: #343A40;
+    --color-text-secondary: #6C757D;
+    /* Fondos */
+    --bg-main: #F5F7FA;        /* gris muy claro */
+    --bg-section: #E9EDF2;     /* gris frío */
+    --bg-dark-soft: #2B3440;   /* azul grisáceo oscuro */
+
+    /* Primarios */
+    --blue-primary: #1F3A5F;   /* azul petróleo */
+    --teal-primary: #1FA6A0;   /* verde tecnológico */
+
+    /* Acento */
+    --violet-accent: #7A6CCF;  /* violeta SUAVE (clave) */
+
+    /* Texto */
+    --text-main: #2E2E2E;
+    --text-light: #FFFFFF;
+    --text-muted: #6C757D;
+}
+
+body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
+}
+
+.hero-header {
+    background: linear-gradient(135deg, var(--color-bg-dark), var(--color-primary));
+    padding: 5rem 1rem;
+}
+
+.hero-logo {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 1.25rem;
+    background-color: #ffffff;
+    padding: 0.75rem;
+}
+
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #e9ecef;
+}
+
+.navbar {
+    background-color: var(--color-bg-dark);
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--color-secondary);
+}
+
+.carousel-section {
+    background-color: #343A40;
+    box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #343A40;
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+.carousel img {
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    background-color: #343A40;
+}
+
+.empresa-section {
+    background-color: #2e2e2e;
+    /* gris tecnológico */
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 280px;
+    perspective: 1000px;
+    /* profundidad 3D */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.flip-card-front {
+    background: linear-gradient(145deg, #1f3a5f, #2b4f7a);
+    color: #ffffff;
+}
+
+.flip-card-front i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.flip-card-front h4 {
+    margin: 0;
+}
+
+.flip-card-back {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    transform: rotateY(180deg);
+}
+
+.cta-section {
+    background-color: var(--blue-primary);
+    color: var(--text-light);
+}
+
+.btn-cta {
+    background-color: var(--violet-accent);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-cta:hover {
+    background-color: #6A5BC2;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #084298;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+footer {
+    background-color: var(--color-bg-dark);
+}
+
+footer i {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =======================
+   EXPERIENCIA - HOME
+======================= */
+
+.experience-section {
+    background-color: #f2f4f8;
+}
+
+.experience-title {
+    font-weight: 700;
+    color: #1f3a5f;
+}
+
+.experience-subtitle {
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.experience-card h3 {
+    font-size: 2rem;
+    color: #6f42c1; /* violeta del logo */
+    margin-bottom: 8px;
+}
+
+.experience-card p {
+    margin: 0;
+    color: #495057;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Logos */
+.experience-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.experience-logos img {
+    max-height: 50px;
+    opacity: 0.7;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.experience-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Botón */
+.btn-outline-experience {
+    border: 2px solid #6f42c1;
+    color: #6f42c1;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-experience:hover {
+    background-color: #6f42c1;
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .hero-header {
+        padding: 3rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-logo {
+        max-width: 240px;
+    }
+}
